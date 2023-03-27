@@ -7,14 +7,15 @@
         "php": ">=8.1",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "halaxa/json-machine": "^1.1",
         "symfony/console": "6.2.*",
         "symfony/dotenv": "6.2.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "6.2.*",
+        "symfony/http-client": "6.2.*",
         "symfony/runtime": "6.2.*",
+        "symfony/twig-bundle": "6.2.*",
         "symfony/yaml": "6.2.*"
-    },
-    "require-dev": {
     },
     "config": {
         "allow-plugins": {
@@ -63,5 +64,10 @@
             "allow-contrib": false,
             "require": "6.2.*"
         }
+    },
+    "require-dev": {
+        "symfony/maker-bundle": "^1.48",
+        "symfony/stopwatch": "6.2.*",
+        "symfony/web-profiler-bundle": "6.2.*"
     }
 }
