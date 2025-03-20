@@ -182,9 +182,9 @@ class MyExtendedHttpClient implements HttpClientInterface
 
             $tempAdditionalResponses = [];
             $tempAdditionalResponses[] = substr($subChunk, 0, -1);
+            preg_match('/"id":(\d+)/', $subChunk, $match);
 
             foreach ($toAdd as $key => $url) {
-                preg_match('/"id":(\d+)/', $subChunk, $match);
 
                 $tempAdditionalResponses[] = sprintf(', "%s":', $key);
 
